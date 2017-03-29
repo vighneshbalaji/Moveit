@@ -1,0 +1,213 @@
+<html>
+	<head>
+	<title>CHESS</title>
+	<meta http-equiv="Page-Enter" content=BlendTrans(duration=5.0) />
+	<style>
+	body{background:url('images/sand-light.jpg') fixed; margin-left:2%;}
+	#chsbrd td{width:60px; height:60px;}
+	
+	.idnt{border:0px; color:#0000FF; text-align:center; font-size:14pt; font-weight:bold;}
+	.blck{background-color:#FAAA3C;}
+	.whte{background-color:white;}
+	.cmnt{background-color:#C0C0C0;}
+	.army{background-color:#AA0000;}
+	.gold{background-color:#F5E950;}
+	.blue{background-color:#3C48A2;}
+	.prpl{background-color:#990099;}
+	.orgn{background-color:#FF800D;}
+	.slct{background-color:#FF73B9; width:50px; height:50px;}
+	
+	
+	.blck img{width:50px; height:50px;}
+	.whte img{width:50px; height:50px;}
+	
+	.cmnt img{width:50px; height:50px;}
+	.army img{width:50px; height:50px;}
+	
+	.gold img{width:50px; height:50px;}
+	.blue img{width:50px; height:50px;}
+	
+	.prpl img{width:50px; height:50px;}
+	.orgn img{width:50px; height:50px;}
+	
+	.timer{text-align:center; font-size:30pt; color:red; font-weight:bold;}
+	
+	</style>
+	<script language="JavaScript" src="chess_script.js"></script>
+	</head>
+	
+	<body>
+	<form name="chss" method="post">
+	<br />
+	<table>
+	<col width="40%" />
+	<col width="*" />
+	<tr>
+	<td valign="top">
+	<div align="center"><img style="height:90px; width:240px;" src="images/mvbbsk.gif" title="BskVighneshbalaji" /></div><br />
+	<div align="center"><img name="title" src="images/title.gif" /></div><br /><br />
+	<span style="font-size:15pt; font-weight:bold; color:#008000">MATE IN :- &nbsp;&nbsp;</span>  
+	<select name="types">
+	<option value="select one"> -- Select Game Type --</option>
+	<option value="1">One Move</option>
+	<option value="2">Two Move</option>
+	</select> <br /> <br />
+	<span style="font-size:15pt; font-weight:bold; color:#008000">PROBLEM &nbsp;&nbsp;</span><input type="text" style="text-align:center; font-size:15pt; font-weight:bold; background-color:#000080; color:cyan" name="fenp" id="fenp" size="8" readonly /><br /><br />
+	<span style="font-size:15pt; font-weight:bold; color:#008000">FEN</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" style="font-weight:bold; color:#008000;" accesskey="c" name="cpyfen" id="cpyfen" value="Copy FEN" onclick="copy();" /><br /><br />
+	<textarea rows="2" cols="36" id="texts" style=" font-size:12pt; font-weight:bold; background-color:#BF00BF; color:#FFFF00;" name="fenq" id="fenq" readonly></textarea>	<br />
+	 <br />
+	 <select name="brdclrs">
+	 <option value="selectone"> -- Select Board Color --</option>
+	 <option value="1" >Army|Gray</option>
+	 <option value="2" >Blue|Gold</option>
+	 <option value="3" >Purple|Orange</option>	 
+	 </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <select name="pics">
+	 <option value="selectone"> -- Select Chess Pieces 	 --</option>
+	 <option value="1" >Standard</option>
+	 <option value="2" >LEIPZIG</option>
+	 </select>
+	 <br /><br />
+	<span style="font-size:15pt; font-weight:bold; color:#008000">MOVE</span><br />
+	<input type="text" style="text-align:center; font-size:15pt; font-weight:bold; color:#FFFF99; background-color:#BF00BF;" name="fena" id="fena" size="30" readonly /><br /><br />
+	<img name="begin" id="begin" src="images/strt.gif" onclick="strt();" width="170px" height="60px" />
+	<img name="anirep" id="anirep" src="images/backgrnd.jpg" width="100px" width="70px" />
+	</td>
+	<td valign="top">
+	<table name="chsbrd" id="chsbrd" cellspacing="0" border="1">
+	<tr>
+	<td style="width:5px; height:20px; border:0px; font-size:8pt; font-weight:bold; color:#c00000;">MVB</td>
+	<td style="height:5px;" class="idnt">a</td>
+	<td style="height:5px;" class="idnt">b</td>
+	<td style="height:5px;" class="idnt">c</td>
+	<td style="height:5px;" class="idnt">d</td>
+	<td style="height:5px;" class="idnt">e</td>
+	<td style="height:5px;" class="idnt">f</td>
+	<td style="height:5px;" class="idnt">g</td>
+	<td style="height:5px;" class="idnt">h</td>	
+	<td style="width:5px; height:20px; border:0px;"><img title="" name="ply1" id="ply1" src="images/blankw.jpg" /></td>
+	</tr>
+	<tr>
+	<td style="width:20px;" class="idnt">8</td>
+	<td name="ba8" id="ba8" align="center" class="whte"><img name="a8" id="a8" src="images/blankw.jpg" onclick="mve(a8);" /></td>
+	<td name="bb8" id="bb8" align="center" class="blck"><img name="b8" id="b8" src="images/blankb.jpg" onclick="mve(b8);" /></td>
+	<td name="bc8" id="bc8" align="center" class="whte"><img name="c8" id="c8" src="images/blankw.jpg" onclick="mve(c8);" /></td>
+	<td name="bd8" id="bd8" align="center" class="blck"><img name="d8" id="d8" src="images/blankb.jpg" onclick="mve(d8);" /></td>
+	<td name="be8" id="be8" align="center" class="whte"><img name="e8" id="e8" src="images/blankw.jpg" onclick="mve(e8);" /></td>
+	<td name="bf8" id="bf8" align="center" class="blck"><img name="f8" id="f8" src="images/blankb.jpg" onclick="mve(f8);" /></td>
+	<td name="bg8" id="bg8" align="center" class="whte"><img name="g8" id="g8" src="images/blankw.jpg" onclick="mve(g8);" /></td>
+	<td name="bh8" id="bh8" align="center" class="blck"><img name="h8" id="h8" src="images/blankb.jpg" onclick="mve(h8);" /></td>	
+	<td style="width:20px;" class="idnt">8</td>
+	</tr>
+	<tr>
+	<td style="width:20px;" class="idnt">7</td>
+	<td name="ba7" id="ba7" align="center" class="blck"><img name="a7" id="a7" src="images/blankb.jpg" onclick="mve(a7);" /></td>
+	<td name="bb7" id="bb7" align="center" class="whte"><img name="b7" id="b7" src="images/blankw.jpg" onclick="mve(b7);" /></td>
+	<td name="bc7" id="bc7" align="center" class="blck"><img name="c7" id="c7" src="images/blankb.jpg" onclick="mve(c7);" /></td>
+	<td name="bd7" id="bd7" align="center" class="whte"><img name="d7" id="d7" src="images/blankw.jpg" onclick="mve(d7);" /></td>
+	<td name="be7" id="be7" align="center" class="blck"><img name="e7" id="e7" src="images/blankb.jpg" onclick="mve(e7);" /></td>
+	<td name="bf7" id="bf7" align="center" class="whte"><img name="f7" id="f7" src="images/blankw.jpg" onclick="mve(f7);" /></td>
+	<td name="bg7" id="bg7" align="center" class="blck"><img name="g7" id="g7" src="images/blankb.jpg" onclick="mve(g7);" /></td>
+	<td name="bh7" id="bh7" align="center" class="whte"><img name="h7" id="h7" src="images/blankw.jpg" onclick="mve(h7);" /></td>
+	<td style="width:20px;" class="idnt">7</td>
+	</tr>
+	<tr>
+	<td style="width:20px;" class="idnt">6</td>
+	<td name="ba6" id="ba6" align="center" class="whte"><img name="a6" id="a6" src="images/blankw.jpg" onclick="mve(a6);" /></td>
+	<td name="bb6" id="bb6" align="center" class="blck"><img name="b6" id="b6" src="images/blankb.jpg" onclick="mve(b6);" /></td>
+	<td name="bc6" id="bc6" align="center" class="whte"><img name="c6" id="c6" src="images/blankw.jpg" onclick="mve(c6);" /></td>
+	<td name="bd6" id="bd6" align="center" class="blck"><img name="d6" id="d6" src="images/blankb.jpg" onclick="mve(d6);" /></td>
+	<td name="be6" id="be6" align="center" class="whte"><img name="e6" id="e6" src="images/blankw.jpg" onclick="mve(e6);" /></td>
+	<td name="bf6" id="bf6" align="center" class="blck"><img name="f6" id="f6" src="images/blankb.jpg" onclick="mve(f6);" /></td>
+	<td name="bg6" id="bg6" align="center" class="whte"><img name="g6" id="g6" src="images/blankw.jpg" onclick="mve(g6);" /></td>
+	<td name="bh6" id="bh6" align="center" class="blck"><img name="h6" id="h6" src="images/blankb.jpg" onclick="mve(h6);" /></td>	
+	<td style="width:20px;" class="idnt">6</td>
+	</tr>
+	<tr>
+	<td style="width:20px;" class="idnt">5</td>
+	<td name="ba5" id="ba5" align="center" class="blck"><img name="a5" id="a5" src="images/blankb.jpg" onclick="mve(a5);" /></td>
+	<td name="bb5" id="bb5" align="center" class="whte"><img name="b5" id="b5" src="images/blankw.jpg" onclick="mve(b5);" /></td>
+	<td name="bc5" id="bc5" align="center" class="blck"><img name="c5" id="c5" src="images/blankb.jpg" onclick="mve(c5);" /></td>
+	<td name="bd5" id="bd5" align="center" class="whte"><img name="d5" id="d5" src="images/blankw.jpg" onclick="mve(d5);" /></td>
+	<td name="be5" id="be5" align="center" class="blck"><img name="e5" id="e5" src="images/blankb.jpg" onclick="mve(e5);" /></td>
+	<td name="bf5" id="bf5" align="center" class="whte"><img name="f5" id="f5" src="images/blankw.jpg" onclick="mve(f5);" /></td>
+	<td name="bg5" id="bg5" align="center" class="blck"><img name="g5" id="g5" src="images/blankb.jpg" onclick="mve(g5);" /></td>
+	<td name="bh5" id="bh5" align="center" class="whte"><img name="h5" id="h5" src="images/blankw.jpg" onclick="mve(h5);" /></td>
+	<td style="width:20px;" class="idnt">5</td>
+	</tr>
+	<tr>
+	<td style="width:20px;" class="idnt">4</td>
+	<td name="ba4" id="ba4" align="center" class="whte"><img name="a4" id="a4" src="images/blankw.jpg" onclick="mve(a4);" /></td>
+	<td name="bb4" id="bb4" align="center" class="blck"><img name="b4" id="b4" src="images/blankb.jpg" onclick="mve(b4);" /></td>
+	<td name="bc4" id="bc4" align="center" class="whte"><img name="c4" id="c4" src="images/blankw.jpg" onclick="mve(c4);" /></td>
+	<td name="bd4" id="bd4" align="center" class="blck"><img name="d4" id="d4" src="images/blankb.jpg" onclick="mve(d4);" /></td>
+	<td name="be4" id="be4" align="center" class="whte"><img name="e4" id="e4" src="images/blankw.jpg" onclick="mve(e4);" /></td>
+	<td name="bf4" id="bf4" align="center" class="blck"><img name="f4" id="f4" src="images/blankb.jpg" onclick="mve(f4);" /></td>
+	<td name="bg4" id="bg4" align="center" class="whte"><img name="g4" id="g4" src="images/blankw.jpg" onclick="mve(g4);" /></td>
+	<td name="bh4" id="bh4" align="center" class="blck"><img name="h4" id="h4" src="images/blankb.jpg" onclick="mve(h4);" /></td>	
+	<td style="width:20px;" class="idnt">4</td>
+	</tr>
+	<tr>
+	<td style="width:20px;" class="idnt">3</td>
+	<td name="ba3" id="ba3" align="center" class="blck"><img name="a3" id="a3" src="images/blankb.jpg" onclick="mve(a3);" /></td>
+	<td name="bb3" id="bb3" align="center" class="whte"><img name="b3" id="b3" src="images/blankw.jpg" onclick="mve(b3);" /></td>
+	<td name="bc3" id="bc3" align="center" class="blck"><img name="c3" id="c3" src="images/blankb.jpg" onclick="mve(c3);" /></td>
+	<td name="bd3" id="bd3" align="center" class="whte"><img name="d3" id="d3" src="images/blankw.jpg" onclick="mve(d3);" /></td>
+	<td name="be3" id="be3" align="center" class="blck"><img name="e3" id="e3" src="images/blankb.jpg" onclick="mve(e3);" /></td>
+	<td name="bf3" id="bf3" align="center" class="whte"><img name="f3" id="f3" src="images/blankw.jpg" onclick="mve(f3);" /></td>
+	<td name="bg3" id="bg3" align="center" class="blck"><img name="g3" id="g3" src="images/blankb.jpg" onclick="mve(g3);" /></td>
+	<td name="bh3" id="bh3" align="center" class="whte"><img name="h3" id="h3" src="images/blankw.jpg" onclick="mve(h3);" /></td>
+	<td style="width:20px;" class="idnt">3</td>
+	</tr>
+	<tr>
+	<td style="width:20px;" class="idnt">2</td>
+	<td name="ba2" id="ba2" align="center" class="whte"><img name="a2" id="a2" src="images/blankw.jpg" onclick="mve(a2);" /></td>
+	<td name="bb2" id="bb2" align="center" class="blck"><img name="b2" id="b2" src="images/blankb.jpg" onclick="mve(b2);" /></td>
+	<td name="bc2" id="bc2" align="center" class="whte"><img name="c2" id="c2" src="images/blankw.jpg" onclick="mve(c2);" /></td>
+	<td name="bd2" id="bd2" align="center" class="blck"><img name="d2" id="d2" src="images/blankb.jpg" onclick="mve(d2);" /></td>
+	<td name="be2" id="be2" align="center" class="whte"><img name="e2" id="e2" src="images/blankw.jpg" onclick="mve(e2);" /></td>
+	<td name="bf2" id="bf2" align="center" class="blck"><img name="f2" id="f2" src="images/blankb.jpg" onclick="mve(f2);" /></td>
+	<td name="bg2" id="bg2" align="center" class="whte"><img name="g2" id="g2" src="images/blankw.jpg" onclick="mve(g2);" /></td>
+	<td name="bh2" id="bh2" align="center" class="blck"><img name="h2" id="h2" src="images/blankb.jpg" onclick="mve(h2);" /></td>	
+	<td style="width:20px;" class="idnt">2</td>
+	</tr>
+	<tr>
+	<td style="width:20px;" class="idnt">1</td>
+	<td name="ba1" id="ba1" align="center" class="blck"><img name="a1" id="a1" src="images/blankb.jpg" onclick="mve(a1);" /></td>
+	<td name="bb1" id="bb1" align="center" class="whte"><img name="b1" id="b1" src="images/blankw.jpg" onclick="mve(b1);" /></td>
+	<td name="bc1" id="bc1" align="center" class="blck"><img name="c1" id="c1" src="images/blankb.jpg" onclick="mve(c1);" /></td>
+	<td name="bd1" id="bd1" align="center" class="whte"><img name="d1" id="d1" src="images/blankw.jpg" onclick="mve(d1);" /></td>
+	<td name="be1" id="be1" align="center" class="blck"><img name="e1" id="e1" src="images/blankb.jpg" onclick="mve(e1);" /></td>
+	<td name="bf1" id="bf1" align="center" class="whte"><img name="f1" id="f1" src="images/blankw.jpg" onclick="mve(f1);" /></td>
+	<td name="bg1" id="bg1" align="center" class="blck"><img name="g1" id="g1" src="images/blankb.jpg" onclick="mve(g1);" /></td>
+	<td name="bh1" id="bh1" align="center" class="whte"><img name="h1" id="h1" src="images/blankw.jpg" onclick="mve(h1);" /></td>
+	<td style="width:20px;" class="idnt">1</td>
+	</tr>
+	<tr>
+	<td style="width:5px; height:20px; border:0px;"><img title="" name="ply2" id="ply2" src="images/blankw.jpg" /></td>
+	<td style="height:5px;" class="idnt">a</td>
+	<td style="height:5px;" class="idnt">b</td>
+	<td style="height:5px;" class="idnt">c</td>
+	<td style="height:5px;" class="idnt">d</td>
+	<td style="height:5px;" class="idnt">e</td>
+	<td style="height:5px;" class="idnt">f</td>
+	<td style="height:5px;" class="idnt">g</td>
+	<td style="height:5px;" class="idnt">h</td>	
+	<td style="width:5px; height:20px; border:0px; font-size:8pt; font-weight:bold; color:#008000;">BSK</td>
+	</tr>
+	</table>
+	<br />
+	<table>
+	<col width="33%" />
+	<col width="33%" />
+	<col width="30%" />
+	<tr>
+	<td valign="top"><img name="mveans" id="mveans" valign="bottom" src="images/backgrnd.jpg" width="55px" height="55px" /></td>
+	<td valign="top"><input class="timer" type="text" name="tm" id="tm" size="7" /></td>
+	<td valign="top"><img name="fnans" align="right" id="fnans" valign="bottom" src="images/backgrnd.jpg" width="70px" height="70px" /></td>
+	</tr></table>
+	
+	</td></tr></table>
+	</form>
+	</body>
+</html>

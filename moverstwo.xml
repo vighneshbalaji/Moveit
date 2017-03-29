@@ -1,0 +1,233 @@
+<paper>
+	
+<ques>
+<tplay>W1</tplay>
+<pos>4k3|8|4K3|8|8|8|8|3Q4|</pos>
+<ans>d1-d7|e8-f8|d7-f7|</ans>
+<dans>Qd7 + Kf8|Qf7|</dans>
+</ques>
+
+<ques>
+<tplay>W2</tplay>
+<pos>4k3|8|5K2|8|7Q|8|8|8|</pos>
+<ans>h4-d4|e8-f8|d4-d8|</ans>
+<dans>Qd4 + Kf8|Qd8|</dans>
+</ques>
+
+<ques>
+<tplay>W3</tplay>
+<pos>Q7|8|7k|4K3|7P|8|8|8|</pos>
+<ans>a8-g8|h6-h5|g8-g5|</ans>
+<dans>Qg8 + Kh5|Qg5|</dans>
+</ques>
+
+<ques>
+<tplay>W4</tplay>
+<pos>5k2|8|5P2|8|8|8|8|4Q1K1|</pos>
+<ans>e1-e7|f8-g8|e7-g7|</ans>
+<dans>Qe7 + Kg8|Qg7|</dans>
+</ques>
+
+<ques>
+<tplay>W5</tplay>
+<pos>8|8|5B1k|Q7|8|8|4K3|8|</pos>
+<ans>a5-g5|h6-h7|g5-g7|</ans>
+<dans>Qg5 + Kh7|Qg7|</dans>
+</ques>
+
+<ques>
+<tplay>W6</tplay>
+<pos>8|8|7Q|k2N4|8|8|7K|8|</pos>
+<ans>h6-b6|a5-a4|b6-b4|</ans>
+<dans>Qb6 + Ka4|Qb4|</dans>
+</ques>
+
+<ques>
+<tplay>W7</tplay>
+<pos>4k3|Q7|2K5|8|8|8|8|8|</pos>
+<ans>a7-g7|e8-d8|g7-d7|</ans>
+<dans>Qg7 + Kd8|Qd7|</dans>
+</ques>
+
+<ques>
+<tplay>W8</tplay>
+<pos>8|8|8|7k|8|5K2|8|6Q1|</pos>
+<ans>g1-g7|h5-h4|g7-g4|</ans>
+<dans>Qg7 + Kh4|Qg4|</dans>
+</ques>
+
+<ques>
+<tplay>W9</tplay>
+<pos>7k|8|8|4K3|8|8|8|6Q1|</pos>
+<ans>e5-f6|h8-h7|g1-g7|</ans>
+<dans>Kf6 + Kh7|Qg7|</dans>
+</ques>
+
+<ques>
+<tplay>W10</tplay>
+<pos>1k6|1pp2QR1|2n1p3|3q4|3p4|6P1|5P2|6K1|</pos>
+<ans>f7-c7|b8-a7|c7-b7|</ans>
+<dans>Qxc7 + Ka7|Qxb7|</dans>
+</ques>
+
+<ques>
+<tplay>B1</tplay>
+<pos>1k6|pp5p|2n4r|2P1p1b1|PP2PpP1|N1P4r|1B3PK1|4R3|</pos>
+<ans>f4-f3|g2-f1|h3-h1|</ans>
+<dans>...Pf3 +|Kf1 Rh1|</dans>
+</ques>
+
+<ques>
+<tplay>B2</tplay>
+<pos>7k|pp5p|6pp|4n3|4p3|N1P4P|PPqPN1P1|R1B1K3|</pos>
+<ans>e5-d3|e1-f1|c2-d1|</ans>
+<dans>...Nd3 +|Kf1 Qd1|</dans>
+</ques>
+
+<ques>
+<tplay>B3</tplay>
+<pos>2r3k1|q5pR|p1n1p1P1|Pp1BP3|1Pn2rP1|2PQ4|4K3|2R5|</pos>
+<ans>a7-f2|e2-d1|c4-b2|</ans>
+<dans>...Qf2 +|Kd1 Nb2|</dans>
+</ques>
+
+<ques>
+<tplay>B4</tplay>
+<pos>r4r1k|pbpq1Bb1|1p4Q1|6Pp|3P4|2P3p1|PP1B2P1|4RR1K|</pos>
+<ans>d7-h3|h1-g1|h3-g2|</ans>
+<dans>...Qh3 +|Kg1 Qxg2|</dans>
+</ques>
+
+<ques>
+<tplay>B5</tplay>
+<pos>7k|1Q4pp|1pn5|p2q1p2|P1p5|1PP2P2|1B2r2P|R5KR|</pos>
+<ans>d5-c5|g1-f1|c5-f2|</ans>
+<dans>...Qc5 +|Kf1 Qf2|</dans>
+</ques>
+
+<ques>
+<tplay>B6</tplay>
+<pos>r1b1k2r|pppp1ppp|5q2|2K1n3|4P3|2N3PN|PPP4P|R1BQ1B1R|</pos>
+<ans>f6-b6|c5-d5|b6-d6|</ans>
+<dans>...Qb6 +|Kd5 Qd6|</dans>
+</ques>
+
+<ques>
+<tplay>B7</tplay>
+<pos>rnb1k1nr|ppp2ppp|3b4|6q1|8|5NP1|PPPPP2P|RNBQKB1R|</pos>
+<ans>g5-g3|h2-g3|d6-g3|</ans>
+<dans>...Qxg3 +|Pxg3 Bxg3|</dans>
+</ques>
+
+<ques>
+<tplay>B8</tplay>
+<pos>r5r1|pp1k1p1p|2p5|3p4|3PnP2|NB3R1n|PP5P|4R2K|</pos>
+<ans>h3-f2|f3-f2|e4-f2|</ans>
+<dans>...Nf2 +|Rxf2 Nxf2|</dans>
+</ques>
+
+<ques>
+<tplay>B9</tplay>
+<pos>r6r|2p1k2p|1p1p4|p7|K1B1nP2|3P2q1|PPn2p2|RNB2Q1R|</pos>
+<ans>e4-c5|a4-b5|c2-d4|</ans>
+<dans>...Nc5 +|Kb5 Nd4|</dans>
+</ques>
+
+<ques>
+<tplay>B10</tplay>
+<pos>7k|p5r1|1p5p|1P3p2|P1PN1P2|6nP|2R3BK|2r5|</pos>
+<ans>c1-h1|g2-h1|g3-f1|</ans>
+<dans>...Rh1 +|Bxh1 Nf1|</dans>
+</ques>
+<ques>
+	<tplay>B11</tplay>
+	<pos>6k1|ppp3pp|1b1p3r|n2P4|5q2|3QB2B|P4P2|R4R1K|</pos>
+	<ans>h6-h3|h1-g1|f4-g4|</ans>
+	<dans>...Rxh3 +|Kg1 Qg4|</dans>
+</ques>
+<ques>
+	<tplay>B12</tplay>
+	<pos>6k1|5ppp|5n2|1P6|3Qp3|1b1n1P2|q5PP|5KNR|</pos>
+	<ans>a2-b1|f1-e2|b1-e1|</ans>
+	<dans>...Qb1 +|Ke2 Qe1|</dans>
+</ques>
+<ques>
+	<tplay>B13</tplay>
+	<pos>r1bn1rk1|ppp1B1pp|1b1p4|3Pp3|4n2N|2P4P|PP2BPP1|R2QK2R|</pos>
+	<ans>b6-f2|e1-f1|e4-g3|</ans>
+	<dans>...Bxf2 +|Kf1 Ng3|</dans>
+</ques>
+<ques>
+	<tplay>B14</tplay>
+	<pos>r1b1k2r|1p3n2|p1n1p3|3pPp2|3P2pq|P1N1b1P1|1PN1BR1P|R1BQ2K1|</pos>
+	<ans>h4-h2|g1-f1|h2-f2|</ans>
+	<dans>...Qxh2 +|Kf1 Qxf2|</dans>
+</ques>
+<ques>
+	<tplay>B15</tplay>
+	<pos>2kr3r|pp3ppp|1qn1bn2|1Qb1p3|4P3|2B2NN1|PP3PPP|R3KB1R|</pos>
+	<ans>c5-f2|e1-e2|b6-e3|</ans>
+	<dans>...Bxf2 +|Ke2 Qe3|</dans>
+</ques>
+<ques>
+	<tplay>B16</tplay>
+	<pos>5rk1|pp3PP1|1p5p|4Pq2|3P2P1|Pb2Q3|1PNK1BP1|3R4|</pos>
+	<ans>f5-c2|d2-e1|c2-d1|</ans>
+	<dans>...Qxc2 +|Ke1 Qxd1|</dans>
+</ques>
+<ques>
+	<tplay>B17</tplay>
+	<pos>r6q|b1p1k1p1|2pp1nb1|P3p3|3PPpr1|2P4N|5P1K|RNBQ1R2|</pos>
+	<ans>h8-h3|h2-h3|a8-h8|</ans>
+	<dans>...Qxh3 +|Kxh3 Rh8|</dans>
+</ques>
+<ques>
+	<tplay>B18</tplay>
+	<pos>4k1r1|ppp4p|8|4p3|4P3|2N4n|PPP3rP|3R1R1K|</pos>
+	<ans>g2-g1|f1-g1|h3-f2|</ans>
+	<dans>...Rg1 +|Rxg1 Nf2|</dans>
+</ques>
+<ques>
+	<tplay>B19</tplay>
+	<pos>r2n1rk1|1ppb2pp|1p1p4|3Pp2n|2b3P1|2P4P|PP1N1R1K|R2Q2N1|</pos>
+	<ans>f8-f2|h2-h1|h5-g3|</ans>
+	<dans>...Rxf2 +|Kh1 Ng3|</dans>
+</ques>
+<ques>
+	<tplay>B20</tplay>
+	<pos>N1bk3r|p5pp|3b1p2|3B4|3nP2K|3Pn3|PPP4P|R1B1Q2R|</pos>
+	<ans>d4-f3|h4-h5|c8-g4|</ans>
+	<dans>...Nf3 +|Kh5 Bg4|</dans>
+</ques>
+<ques>
+	<tplay>B21</tplay>
+	<pos>6k1|p1p3p1|1bp4p|4pr2|4bqPK|2P4P|PP2Qn2|R4RB1|</pos>
+	<ans>f5-h5|h4-h5|f4-g5|</ans>
+	<dans>...Rh5 +|Kxh5 Qg5|</dans>
+</ques>
+<ques>
+	<tplay>B22</tplay>
+	<pos>R4bk1|2p4r|2Pp1n2|3Pp1q1|4Pp1p|5P1K|4BBP1|4Q3|</pos>
+	<ans>g5-g3|f2-g3|h4-g3|</ans>
+	<dans>...Qg3 +|Bxg3 Pxg3|</dans>
+</ques>
+<ques>
+	<tplay>B23</tplay>
+	<pos>Q4nk1|5ppp|8|3N4|7r|4q3|P1P5|RKR5|</pos>
+	<ans>e3-b6|d5-b6|h4-b4|</ans>
+	<dans>...Qb6 +|Nxb6 Rb4|</dans>
+</ques>
+<ques>
+	<tplay>B24</tplay>
+	<pos>1k1r4|ppp4p|6p1|3n1p2|1P6|P3PP2|5PB1|4K1NR|</pos>
+	<ans>d5-c3|e1-f1|d8-d1|</ans>
+	<dans>...Nc3 +|Kf1 Rd1|</dans>
+</ques>
+<ques>
+	<tplay>B25</tplay>
+	<pos>N3r1k1|p4pp1|1pn5|2p5|8|3P1bPp|PPP2P1P|R3BRK1|</pos>
+	<ans>c6-d4|e1-e3|d4-e2|</ans>
+	<dans>...Nd4 +|Be3 Ne2|</dans>
+</ques>
+
+ </paper>

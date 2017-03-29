@@ -1,0 +1,57 @@
+<html>
+<head>
+	<meta http-equiv="Page-Enter" content=RevealTrans(duration=3.0,transition=12) />
+	<style>
+	body{background:url('images/sand-light.jpg') fixed; margin-left:2%;}
+	.hid{visibility:hidden;}
+	.shw{visibility:visible;}
+	</style>
+	<script language="JavaScript">
+		function frmar()
+			{ 
+			  ifrms.className = "shw";	
+			  ifrm.location.href = "fromathrs.html";			
+				
+			}
+		function abtar()
+		{
+		  ifrms.className = "shw";
+		  ifrm.location.href = "abtathrs.html";			
+			
+		}
+		function instrt()
+		{
+		ifrms.className="shw";
+		ifrm.location.href = "instruction.html";
+		}
+
+	</script>
+</head>
+<body>
+	<table width="75%" border="0">
+	<tr>
+	<td align="center">
+	<hr width="80%" color="blue" />
+	<img src="images/mvbbsk.gif" width="200px" height="80px"/><br />
+	<img src="images/title.gif" />
+	<hr width="80%" color="blue" /><br />
+	</td>
+	</tr>
+	
+	<tr>
+	<td>
+	<img src="images/fromauthors.gif" width="200px" height="80px" onclick="frmar();" />&nbsp;&nbsp;&nbsp;
+	<img src="images/instruction.gif" width="200px" height="80px" onclick="instrt();"/>&nbsp;&nbsp;&nbsp;
+	<a href="board.html"><img src="images/launch.gif" width="200px" height="80px" border="0"/></a>&nbsp;&nbsp;&nbsp;
+	<img src="images/aboutauthors.gif" width="200px" height="85px" onclick="abtar();" />
+	</td>
+	</tr>
+	
+	<tr id="ifrms" class="hid">
+	<td>
+    <iframe name="ifrm" id="ifrm" src="" width="900" height="360" border="0"></iframe>
+	</td>
+	</tr>
+	
+</body>
+</html>
